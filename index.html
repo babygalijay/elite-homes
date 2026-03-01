@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELITE HOME SERVICE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
+      ELITE <span class="text-dark">HOME SERVICE</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-primary rounded-pill px-4" href="https://wa.me/2347045441093">
+            <i class="fab fa-whatsapp me-1"></i> Book Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+
+<!--css-->
+<style>
+/* ELITE WATERMARK STYLING */
+.watermark-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%; /* Larger than screen to cover during rotation */
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-15deg); /* Professional diagonal tilt */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.watermark-text {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.08); /* Very subtle white */
+  white-space: nowrap;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+#hero .container {
+  z-index: 5; /* Ensures text is always above the watermark */
+}
+
+</style>
+<section id="hero" class="hero-section text-white d-flex align-items-center position-relative" style="
+    /* Lighter overlay (0.5 instead of 0.75) makes the actual work in the image visible */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/elite hero.png'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 85vh;
+    overflow: hidden;">
+
+  <div class="watermark-container">
+    <div class="watermark-text">
+      EHS • ELITE HOME SERVICE • EHS • ELITE HOME SERVICE • EHS • ELITE HOME SERVICE
+    </div>
+    <div class="watermark-text" style="margin-left: -50px;">
+      ELITE HOME SERVICE • EHS • ELITE HOME SERVICE • EHS • ELITE HOME SERVICE • EHS
+    </div>
+    <div class="watermark-text">
+      EHS • ELITE HOME SERVICE • EHS • ELITE HOME SERVICE • EHS • ELITE HOME SERVICE
+    </div>
+  </div>
+
+  <div class="container position-relative" style="z-index: 3;">
+    <div class="row">
+      <div class="col-lg-8">
+        <h6 class="text-primary fw-bold text-uppercase mb-3 tracking-widest">Premium Care • Verified Professionals</h6>
+        <h1 class="display-3 fw-bold mb-4">Trusted <span class="text-primary">Experts</span> <br>At Your Service</h1>
+        <p class="lead mb-5 fw-normal">
+          Top-tier Plumbing, Security, Tutoring & more. <br>
+          <span class="text-warning fw-bold">Special Offer: Get 20% OFF your first booking!</span>
+        </p>
+        
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://wa.me/2347045441093" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow">
+            <i class="fab fa-whatsapp me-2"></i>Book Now
+          </a>
+          <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold">
+            View Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="py-5 bg-light">
+  <div class="container text-center mb-5">
+    <h6 class="text-primary fw-bold text-uppercase">Solutions</h6>
+    <h2 class="fw-bold">Our Elite Services</h2>
+    <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/elite plumber.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-tools fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Plumbing</h5>
+            <p class="text-muted small">Professional leak repairs, pipe installations, and 24/7 emergency fixes.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Plumbing')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/electirc elite.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-bolt fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Electrical</h5>
+            <p class="text-muted small">Certified installations, professional wiring, and precision technical maintenance.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Electrical')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/elite\ cleanin.jfif'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-broom fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Cleaning</h5>
+            <p class="text-muted small">Premium deep cleaning services for luxury homes and corporate offices.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Cleaning')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/laundry\ elite.webp'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-tshirt fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Laundry</h5>
+            <p class="text-muted small">Premium pickup, professional wash/dry, and doorstep delivery services.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Laundry')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/food\ elite.jfif'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-utensils fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Home Cooking</h5>
+            <p class="text-muted small">Elite personal chefs for your daily nutrition or private dining events.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Home Cooking')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/delivery.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-truck fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Delivery</h5>
+            <p class="text-muted small">Fast, secure, and highly reliable merchandise delivery for your personal or business needs.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Delivery')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/elite tutor.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-user-graduate fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Tutoring</h5>
+            <p class="text-muted small">Expert tutors for academic excellence, music, and professional skill development.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Tutoring')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/taxi elite.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-taxi fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Taxi Service</h5>
+            <p class="text-muted small">Safe, air-conditioned premium city travel and reliable airport transfers.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Taxi')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/elite body.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-shield-alt fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">Security & Bodyguard</h5>
+            <p class="text-muted small">Elite executive protection, bodyguards, and professional security for high-profile events.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Bodyguard')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm border-0 overflow-hidden">
+          <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('images/elite\ model.jpeg'); background-size: cover; background-position: center;"></div>
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="bg-white rounded-circle shadow-sm mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; margin-top: -50px; position: relative; z-index: 2;">
+              <i class="fas fa-user-tie fa-2x text-primary"></i>
+            </div>
+            <h5 class="fw-bold mt-3">ELITE VIP Companions</h5>
+            <p class="text-muted small">Professional social companions for high-end events and corporate dinners.</p>
+            <button class="btn btn-outline-primary mt-auto w-100 fw-bold" onclick="bookService('Escort')">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div> </div> </section>
+
+<!--TESTIMONIES-->
+<style>
+  #testimonials {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  .testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: none;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+  .user-img {
+    width: 80px !important;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #0d6efd;
+  }
+  .owl-dot.active span {
+    background: #0d6efd !important;
+  }
+</style>
+
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="text-primary fw-bold text-uppercase">Testimonials</h6>
+      <h2 class="display-5 fw-bold">What Our Elite Clients Say</h2>
+      <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+    </div>
+
+    <div class="owl-carousel owl-theme" id="testimonial-slider">
+      
+      <div class="item">
+        <div class="testimonial-card shadow-sm p-4 m-2">
+          <div class="text-warning mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-muted italic">"The plumbing service was incredibly fast. The technician was professional and left the place spotless. Highly recommended in Lagos!"</p>
+          <div class="d-flex align-items-center mt-4">
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Mr. Adebayo</h6>
+              <small class="text-primary">Victoria Island</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-card shadow-sm p-4 m-2">
+          <div class="text-warning mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-muted small">"I used their VIP escort and security for a corporate event. The level of professionalism was world-class. Truly elite service."</p>
+          <div class="d-flex align-items-center mt-4">
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Mrs. Chidi</h6>
+              <small class="text-primary">Abuja Business Owner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-card shadow-sm p-4 m-2">
+          <div class="text-warning mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-muted small">"My kids' math grades improved significantly after just a month with the Elite tutors. They are patient and very knowledgeable."</p>
+          <div class="d-flex align-items-center mt-4">
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Dr. Emeka</h6>
+              <small class="text-primary">Parent</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--CTA-->
+
+<style>
+  /* Custom Dark Gradient Background */
+.cta-elite {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* Deep Navy/Slate Gradient */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography refinement */
+.cta-elite h2 {
+  letter-spacing: -0.02em;
+}
+
+/* Professional Button Styling */
+.btn-whatsapp-elite {
+  background-color: #25d366; /* Official WhatsApp Green */
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  text-decoration: none;
+}
+
+.btn-whatsapp-elite:hover {
+  background-color: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: #fff;
+}
+
+.btn-whatsapp-elite i {
+  font-size: 1.25rem;
+}
+</style>
+<section class="cta-elite py-5">
+  <div class="container text-center">
+    <div class="cta-content mx-auto" style="max-width: 700px;">
+      <h2 class="display-5 fw-bold mb-3 text-white">Need Immediate Assistance?</h2>
+      <p class="lead mb-4 text-white-50">Our team is online and ready to help. Start a conversation instantly on WhatsApp.</p>
+      <a href="https://wa.me/2347045441093" class="btn btn-whatsapp-elite">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!--FOOTER-->
+<footer id="contact" class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold text-primary mb-3">ELITE <span class="text-white">HOME SERVICE</span></h5>
+        <p class="small text-secondary">
+          Premium home and personal services across Nigeria. 
+          Professionalism is our standard.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 text-md-center">
+        <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#service" class="text-secondary text-decoration-none d-block mb-2">Services</a></li>
+          <li><a href="#testimonials" class="text-secondary text-decoration-none d-block mb-2">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12 text-lg-end">
+        <h5 class="text-white fw-bold mb-3">Get In Touch</h5>
+        
+        <div class="mb-3">
+          <a href="https://wa.me/2347045441093" class="text-secondary text-decoration-none d-block mb-2">
+            <i class="fab fa-whatsapp me-2 text-primary"></i>+234 7045441093
+          </a>
+          <a href="mailto:homeserviceseselite3@gmail.com" class="text-secondary text-decoration-none d-block">
+            <i class="fas fa-envelope me-2 text-primary"></i>homeserviceseselite3@gmail.com
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-lg-end gap-3 mt-3">
+          <a href="https://www.tiktok.com/@elite.home.servic?_r=1&_t=ZS-94KPpr0UxE7" class="text-white fs-5"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/eli_tehomeservices?igsh=cnZqeWR3Nmh4MWg4&utm_source=qr" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61588656790868&mibextid=wwXIfr" class="text-white fs-5"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="border-secondary mt-5 opacity-25">
+    <div class="text-center small text-secondary">
+      © 2026 ELITE HOME SERVICE. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const MY_NUMBER = "2347045441093";
+
+function bookService(serviceName){
+  const msg = `Hello Elite home, I would like to book your ${serviceName} service.`;
+  window.open(`https://wa.me/${MY_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#testimonial-slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive:{
+        0:{ items:1 },
+        768:{ items:2 },
+        1000:{ items:3 }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
