@@ -1,0 +1,94 @@
+
+/*css for hero*/
+/* ELITE WATERMARK STYLING */
+.watermark-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%; /* Larger than screen to cover during rotation */
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-15deg); /* Professional diagonal tilt */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.watermark-text {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.08); /* Very subtle white */
+  white-space: nowrap;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+#hero .container {
+  z-index: 5; /* Ensures text is always above the watermark */
+}
+
+
+/*Testimonies*/
+#testimonials {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  .testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: none;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+  .user-img {
+    width: 80px !important;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #0d6efd;
+  }
+  .owl-dot.active span {
+    background: #0d6efd !important;
+  }
+
+  /*CTA*/
+   /* Custom Dark Gradient Background */
+.cta-elite {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* Deep Navy/Slate Gradient */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Typography refinement */
+.cta-elite h2 {
+  letter-spacing: -0.02em;
+}
+
+/* Professional Button Styling */
+.btn-whatsapp-elite {
+  background-color: #25d366; /* Official WhatsApp Green */
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  text-decoration: none;
+}
+
+.btn-whatsapp-elite:hover {
+  background-color: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: #fff;
+}
+
+.btn-whatsapp-elite i {
+  font-size: 1.25rem;
+}

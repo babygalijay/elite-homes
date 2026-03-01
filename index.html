@@ -9,15 +9,17 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/elit favicon.jpeg">
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.html">
-      ELITE <span class="text-dark">HOME SERVICE</span>
-    </a>
+    <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+  <img src="images/elite logo.jpeg" alt="Elite Home Service Logo" width="50" height="50" class="me-2">
+  ELITE <span class="text-dark">HOME SERVICE</span>
+</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
@@ -45,40 +47,6 @@
 </nav>
 
 <!-- HERO -->
-
-
-<!--css-->
-<style>
-/* ELITE WATERMARK STYLING */
-.watermark-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150%; /* Larger than screen to cover during rotation */
-  height: 150%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transform: rotate(-15deg); /* Professional diagonal tilt */
-  pointer-events: none;
-  z-index: 1;
-}
-
-.watermark-text {
-  font-size: 4rem;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.08); /* Very subtle white */
-  white-space: nowrap;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-}
-
-#hero .container {
-  z-index: 5; /* Ensures text is always above the watermark */
-}
-
-</style>
 <section id="hero" class="hero-section text-white d-flex align-items-center position-relative" style="
     /* Lighter overlay (0.5 instead of 0.75) makes the actual work in the image visible */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -122,6 +90,8 @@
     </div>
   </div>
 </section>
+
+<!--Services-->
 <section id="services" class="py-5 bg-light">
   <div class="container text-center mb-5">
     <h6 class="text-primary fw-bold text-uppercase">Solutions</h6>
@@ -275,29 +245,6 @@
     </div> </div> </section>
 
 <!--TESTIMONIES-->
-<style>
-  #testimonials {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  }
-  .testimonial-card {
-    background: #fff;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    border: none;
-  }
-  .testimonial-card:hover {
-    transform: translateY(-10px);
-  }
-  .user-img {
-    width: 80px !important;
-    height: 80px;
-    object-fit: cover;
-    border: 3px solid #0d6efd;
-  }
-  .owl-dot.active span {
-    background: #0d6efd !important;
-  }
-</style>
 
 <section id="testimonials" class="py-5">
   <div class="container">
@@ -361,46 +308,6 @@
 
 <!--CTA-->
 
-<style>
-  /* Custom Dark Gradient Background */
-.cta-elite {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* Deep Navy/Slate Gradient */
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Typography refinement */
-.cta-elite h2 {
-  letter-spacing: -0.02em;
-}
-
-/* Professional Button Styling */
-.btn-whatsapp-elite {
-  background-color: #25d366; /* Official WhatsApp Green */
-  color: #fff;
-  font-weight: 600;
-  padding: 14px 32px;
-  border-radius: 50px;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-  text-decoration: none;
-}
-
-.btn-whatsapp-elite:hover {
-  background-color: #20ba5a;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-  color: #fff;
-}
-
-.btn-whatsapp-elite i {
-  font-size: 1.25rem;
-}
-</style>
 <section class="cta-elite py-5">
   <div class="container text-center">
     <div class="cta-content mx-auto" style="max-width: 700px;">
